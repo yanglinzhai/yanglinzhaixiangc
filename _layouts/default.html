@@ -1,13 +1,16 @@
+---
+title: 你好，世界
+---
 <!DOCTYPE html>
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" type="text/css" href="stylesheets/menu.css">
-	<title>{{ page.title }}</title>
+	<link href="/stylesheets/disqus.css" rel="stylesheet" type="text/css"/>
+	<link href="/stylesheets/menu.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-　　　　{{ content }}
-　　　　<p>here is templete</p>
+{% include menu.html %}
+{{content}}
 {% include disqus.html %}
 </body>
 </html>
